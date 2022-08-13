@@ -1,0 +1,91 @@
+
+
+// Réinitialisation des dimensions par défaut.
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// display: grid; pour aligner img et nav et les mettre aux extremites
+
+#topPage {
+    
+    background-color: #EBD4FF;
+
+    div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    a img {
+        padding: 5px;
+    }
+
+    label i {
+        float: right;
+        padding: 5px;
+    }
+
+}
+
+#menuBurger {
+    display: none;
+
+}
+
+nav#navMenu {
+    height: 0;
+    opacity: 0;
+
+    ul {
+        list-style: none;
+    
+        li a {
+            text-transform: uppercase;
+            background: hsl(227, 81%, 78%);
+            border-bottom: 1px solid hsl(0, 0%, 0%, .1);
+            text-decoration: none;
+            padding: 1rem;
+            color: bisque;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+input#menuBurger:checked ~ nav#navMenu {
+    transition: opacity 1s;
+    opacity: 1;
+    }
+
+input#menuBurger:checked ~ .move {
+    margin-top: 50rem;
+}
+
+
+main {
+    margin:50px 10px 0 10px;
+    transition: margin .5s ease;
+
+    article {
+        margin-bottom: 20px;
+        padding: 10px;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            box-shadow: 5px 0 3px 2px rgb(206, 191, 191);
+            border-radius: 10px;
+
+            img {
+                max-width: 100%;
+                border-radius: 10px 10px 0 0;
+            }
+        
+        }
+    }
+}
+
+
