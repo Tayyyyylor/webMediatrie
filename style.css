@@ -42,26 +42,31 @@ input#menuBurger:checked ~ nav#navMenu {
   opacity: 1;
 }
 
-input#menuBurger:checked ~ .move {
-  transition: margin-top 50px;
-}
-
 main {
   background-color: rgb(158, 149, 255);
   margin-top: 150px;
 }
+main h1 {
+  font-family: "DynaPuff", cursive;
+  margin-left: 40px;
+}
 main article {
-  margin-bottom: 20px;
-  padding: 20px;
+  padding: 40px;
 }
 main article div {
   display: flex;
   flex-direction: column;
-  box-shadow: 5px 0 3px 2px rgb(206, 191, 191);
+  box-shadow: 3px 1px 20px 2px rgb(66, 63, 63);
   border-radius: 10px;
   background-color: white;
 }
-main article div img {
+main article div p {
+  padding: 5px;
+}
+main article img {
   max-width: 100%;
   border-radius: 10px 10px 0 0;
+}
+main article div:hover {
+  transform: scale(1.05);
 }/*# sourceMappingURL=style.css.map */
