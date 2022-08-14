@@ -8,24 +8,19 @@
     box-sizing: border-box;
 }
 
-// display: grid; pour aligner img et nav et les mettre aux extremites
+
 
 #topPage {
     
     background-color: #EBD4FF;
 
-    div {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-    }
-    a img {
+     img {
         padding: 5px;
     }
 
     label i {
         float: right;
-        padding: 5px;
+        padding: 13px 10px 0 0;
     }
 
 }
@@ -61,23 +56,26 @@ input#menuBurger:checked ~ nav#navMenu {
     }
 
 input#menuBurger:checked ~ .move {
-    margin-top: 50rem;
+    transition: margin-top 50px;
+    
 }
 
 
 main {
-    margin:50px 10px 0 10px;
-    transition: margin .5s ease;
+    background-color: rgb(158, 149, 255);
+    margin-top: 150px;
+  
 
     article {
         margin-bottom: 20px;
-        padding: 10px;
+        padding: 20px;
 
         div {
             display: flex;
             flex-direction: column;
             box-shadow: 5px 0 3px 2px rgb(206, 191, 191);
             border-radius: 10px;
+            background-color: white;
 
             img {
                 max-width: 100%;
